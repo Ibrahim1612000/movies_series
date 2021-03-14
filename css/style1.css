@@ -1,0 +1,241 @@
+/*--------------General css style ------------*/
+body{
+    background-color: #333;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------- navbar section-------------*/
+nav{
+    background-color: #333;
+    border-bottom: 3px solid #E15A0D;
+   
+}
+
+nav .image{
+    width: 30%;
+}
+nav .image img{
+    width: 100px;
+    height: 80px;
+    margin: 6px 10px 10px ;
+    margin-left: 30%;
+   
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    justify-content: flex-end;
+    margin-right: 15%;
+    margin-top: -66px;
+}
+
+
+
+nav ul li{
+    
+    margin: 0 20px 14px ;
+    padding: 3px;
+    border-radius: 15px;
+    transition: background-color .5s;
+
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+
+}
+
+nav li:hover{
+      background-color: #E15A0D;
+     
+}
+
+nav ul i{
+    margin-top: 10px;
+    margin-left: 50px;
+    color: white;
+    font-size: 15px;
+
+}
+
+nav ul i:hover{
+    color: #E15A0D;
+    cursor: pointer;
+}
+
+/*-------------- Home section --------------*/
+
+.header{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 45px;
+    color: #F7EFEB;
+    
+}
+.header span{
+    color: #E15A0D;
+   
+}
+
+.movies{
+    
+    margin: 5% 3% 3%;
+}
+
+.movies .kinds_of_movies{
+    color: #E15A0D;
+    border-bottom: 1px solid #E15A0D;
+    border-top: 1px solid #E15A0D;
+    padding: 15px 0;
+}
+
+/*------------------- style of details ----------------*/
+
+.con{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    width: 300px;
+    height: 457px;
+    margin: 7px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.box img{
+    width: 300px;
+    height: 457px;
+    object-fit: cover;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    position: absolute;
+    transition: transform 1s;
+}
+.box:hover img{
+    transform: scale(1.2);
+}
+.box .details{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    left: 25px;
+    top: 25px;
+    right: 25px;
+    bottom: 25px;
+    border-radius: 10px;
+    transform: scaleY(0);
+
+
+    transition: transform 1s;
+}
+.box .details h2{
+    color: #E15A0D;
+    margin: 15px auto;
+    text-align: center;
+}
+.box .details p{
+    color: #fff;
+    text-align: center;
+}
+.box:hover .details{
+    transform: scaleY(1);
+    
+}
+
+.details h3{
+    text-align: center;
+    color: white;
+}
+
+.details p{
+    text-align: center;
+     margin-top: 15px;
+     
+}
+
+.details p i{
+color: #F6F614;   
+}
+
+.details button{
+   
+    margin:22px;
+    padding: 7px;
+    width: 75px;
+    border: 2px solid #E15A0D;
+    background-color: #333;
+    transition: background-color 1s;
+    border-radius: 10px;
+    font-size: 15px;
+    
+}
+
+.details button:hover{
+    background-color: #EAEAE0;
+}
+
+/*------------ sigin in -----------------*/
+
+.content_signin{
+    width: 100%;
+    height: 100vh;
+   
+     
+ }
+ 
+ .login-form{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+ 
+ 
+ }
+ 
+ .sigin_form{
+     height: 310px;
+     width: 270px;
+     border-radius: 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background: rgba(0, 0, 0, 0,1);
+     box-shadow: 0 0 10px rgba(0, 0, 0,1);
+     color: white;
+     padding-top: 60px;
+  
+ }
+ .login h3{
+     letter-spacing: 1px;
+ 
+ }
+ 
+ input{
+     width: 200px;
+     margin-top: 20px;
+     background: transparent;
+     outline: none;
+     padding: 10px;
+     font-size: 13px;
+     border-radius: 30px;
+     box-shadow: 0 0 4px #fff;
+     transition: box-shadow 0.5s ease;
+     color: white;
+ 
+ }
+ 
+ .btn{
+     padding: 5px 20px;
+     margin-top: 30px;
+     background: transparent;
+     border-radius: 30px;
+     box-shadow: 0 0 4px #fff;
+     cursor: pointer;
+ }
